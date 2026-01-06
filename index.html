@@ -158,19 +158,19 @@
     <section class="toolbar">
         <input id="q" class="search" placeholder="🔍 Buscar por nome ou ingrediente..." oninput="filtrarReceitas()" />
         <nav id="navbar">
-            <button class="nav-btn active" onclick="exibirReceita('pizza', this)">Pizza</button>
+            <button class="nav-btn active" onclick="exibirReceita('pizza', this)">Pizza Brasileira</button>
             <button class="nav-btn" onclick="exibirReceita('brownie', this)">Brownie</button>
             <button class="nav-btn" onclick="exibirReceita('panetone', this)">Panetone</button>
-            <button class="nav-btn" onclick="exibirReceita('banana', this)">Bolo Banana</button>
-            <button class="nav-btn" onclick="exibirReceita('mousse', this)">Mousse</button>
-            <button class="nav-btn" onclick="exibirReceita('caneca', this)">Bolo Caneca</button>
+            <button class="nav-btn" onclick="exibirReceita('banana', this)">Bolo de Banana</button>
+            <button class="nav-btn" onclick="exibirReceita('mousse', this)">Mousse de claras</button>
+            <button class="nav-btn" onclick="exibirReceita('caneca', this)">Bolo de Caneca</button>
         </nav>
     </section>
 
     <section id="main-grid">
         <article id="pizza" class="recipe-card active" data-tags="pizza massa salgado">
             <h2>1. Massa de Pizza Caseira (Padrão Pizzaria)</h2>
-            <p><strong>Tempo estimado:</strong> 15 min (preparo) + tempo de descanso. | <strong>Quantidade:</strong> 1 pizza de 29cm.</p>
+            <p><strong>Tempo estimado:</strong> 15 min (preparo) + tempo de descanso. | <strong>Quantidade:</strong> 1 pizza com borda </p>
             <div class="portion-calculator">
                 <span>🔢 Quantidade de Receitas:</span>
                 <input type="number" value="1" min="1" oninput="calcular(this, 'pizza')">
@@ -181,7 +181,7 @@
                 <li>Sal: <span class="val" data-base="1">1</span> colher (chá) rasa</li>
                 <li>Açúcar: <span class="val" data-base="2">2</span> colheres (chá) rasas</li>
                 <li>Água: <span class="val" data-base="125">125</span>ml</li>
-                <li>Óleo vegetal: <span class="val" data-base="2">2</span> colheres (sopa)</li>
+                <li>Azeite: <span class="val" data-base="2">2</span> colheres (sopa)</li>
                 <li>Fermento biológico seco: <span class="val" data-base="1">1</span> colher (chá)</li>
             </ul>
             <h3>Modo de Preparo</h3>
@@ -190,14 +190,14 @@
                 <li><strong>Sova:</strong> Sove a massa manualmente por aproximadamente 5 minutos até que fique lisa e elástica.</li>
                 <li><strong>Descanso:</strong> Forme uma bola e deixe-a descansar para relaxar o glúten.</li>
                 <li><strong>Abertura:</strong> Polvilhe farinha em uma superfície e abra a massa com um rolo.</li>
-                <li><strong>Modelagem:</strong> Coloque a massa na forma de pizza.</li>
+                <li><strong>Modelagem:</strong> Coloque a massa na forma de pizza, preferencia alumínio telada.</li>
             </ol>
             <div class="eng-box"><strong>Dicas Técnicas:</strong> Use a parte de fora (fundo) da forma para moldar as bordas, garantindo uniformidade estética.</div>
             <footer>Fonte: <a href="https://www.youtube.com/watch?v=VLG0shV8k1c" target="_blank">YouTube - Receitas do Kazu</a></footer>
         </article>
 
         <article id="brownie" class="recipe-card" data-tags="brownie chocolate doce">
-            <h2>2. Brownie de Achocolatado (O Melhor do Mundo)</h2>
+            <h2>2. Brownie de Achocolatado </h2>
             <p><strong>Tempo estimado:</strong> 40 min. | <strong>Quantidade:</strong> 1 assadeira retangular (18cm x 27cm).</p>
             <div class="portion-calculator">
                 <span>🔢 Fator Multiplicador:</span>
@@ -225,15 +225,16 @@
 
         <article id="panetone" class="recipe-card" data-tags="panetone natal pão">
             <h2>3. Panetone Caseiro – Método Profissional</h2>
-            <p><strong>Tempo estimado:</strong> 3 a 4 horas. | <strong>Quantidade:</strong> Rende porções de 550g.</p>
+            <p><strong>Tempo estimado:</strong> 3 a 4 horas. | <strong>Quantidade:</strong> Rende no mínimo 2 panetones de 550g.</p>
             <div class="portion-calculator">
                 <span>🔢 Quantidade de Porções:</span>
                 <input type="number" value="1" min="1" oninput="calcular(this, 'panetone')">
             </div>
             <h3>Ingredientes</h3>
             <ul>
+                <li><strong>Tipo de farinha: Recomendo Venturelli, Rosa Branca ou Nita (TIPO 1 SEM FERMENTO)</li>
                 <li><strong>Esponja:</strong> <span class="val" data-base="100">100</span>g farinha, <span class="val" data-base="10">10</span>g fermento, <span class="val" data-base="100">100</span>ml água</li>
-                <li><strong>Massa:</strong> <span class="val" data-base="300">300</span>g farinha Premium, <span class="val" data-base="7">7</span> gemas, <span class="val" data-base="90">90</span>g açúcar, <span class="val" data-base="100">100</span>g manteiga</li>
+                <li><strong>Massa:</strong> <span class="val" data-base="300">300</span>g farinha, <span class="val" data-base="7">7</span> gemas, <span class="val" data-base="90">90</span>g açúcar, <span class="val" data-base="100">100</span>g manteiga</li>
                 <li><strong>Recheio:</strong> <span class="val" data-base="240">240</span>g chocolate picado</li>
             </ul>
             <h3>Modo de Preparo</h3>
@@ -242,7 +243,7 @@
                 <li><strong>Sova:</strong> Bata a esponja com ingredientes da massa até o primeiro ponto de véu.</li>
                 <li><strong>Descanso Térmico:</strong> Gele a massa por 20-30 min para não degradar o glúten.</li>
                 <li><strong>Manteiga:</strong> Adicione manteiga e sal aos poucos até o véu final.</li>
-                <li><strong>Finalização:</strong> Recheie, boleie e deixe crescer até o topo. Asse a 170°C.</li>
+                <li><strong>Finalização:</strong> Recheie, boleie e deixe crescer até o topo da forma. Asse a 170°C por ~40 min.</li>
             </ol>
             <div class="eng-box"><strong>Dicas Técnicas:</strong> Morcegar: Pendure de cabeça para baixo por 1h após o forno para preservar a estrutura.</div>
             <footer>Fonte: <a href="https://www.youtube.com/watch?v=xqHIe92e4TI" target="_blank">YouTube - Sandra Dias</a></footer>
@@ -426,3 +427,4 @@
 </script>
 </body>
 </html>
+
